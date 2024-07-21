@@ -32,6 +32,10 @@ Para começar a trabalhar com o projeto, você precisa clonar o repositório e i
 
 `cd nome do diretorio`
 
+3. **Instale as dependências:**
+
+`npm install`
+
 ### Criação e Configuração do Banco de Daos
 
 1. **Crie e configure o arquivo ENV:**
@@ -61,10 +65,6 @@ PORT=3001
 4. **Populando o Banco de Dados**
 
 `npm run seed`
-
-### **Instale as dependências:**
-
-`npm install`
 
 ## Executando o Projeto
 ------------
