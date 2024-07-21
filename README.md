@@ -3,7 +3,6 @@
 Este é um aplicativo back-end construído com NodeJS, TypeScript, ExpressJS, TypeORM, e PostgreSQL. Aqui você pode ver informações detalhadas sobre a instalação, execução, estrutura do projeto, contribuição e licença.
 
 ## Índice
---------
 
 * **Instalação**: Fornece os comandos para clonar o repositório e instalar as dependências.
 * **Executando o Projeto**: Explica como iniciar o projeto em modo de desenvolvimento.
@@ -13,7 +12,6 @@ Este é um aplicativo back-end construído com NodeJS, TypeScript, ExpressJS, Ty
 
 
 ## Instalação
-------------
 
 Para começar a trabalhar com o projeto, você precisa clonar o repositório e instalar as dependências.
 
@@ -67,7 +65,6 @@ PORT=3001
 `npm run seed`
 
 ## Executando o Projeto
-------------
 
 Para iniciar o projeto, use o comando abaixo. Isso iniciará o servidor de desenvolvimento e abrirá o aplicativo em seu navegador padrão.
 
@@ -76,13 +73,11 @@ Para iniciar o projeto, use o comando abaixo. Isso iniciará o servidor de desen
 O aplicativo será acessível em http://localhost:3001.
 
 ## Executando o Projeto Back End
-------------
 
 O projeto possui os dados para a parte Front End do Desafio, ambos precisam estar funcionando ao mesmo tempo, voce pode encontrar o repositorio front end e como inicia-lo aqui: [Desafio Front End](https://bitbucket.org/fernandoforastieri/smart-desafio-front-end/src/main/)
 
 
 ## Estrutura do Projeto
----------------------
 
 Aqui está uma visão geral da estrutura do projeto:
 
@@ -101,7 +96,6 @@ Aqui está uma visão geral da estrutura do projeto:
 * **ENV.example**: Exemplo para uma estrutura e valores padrão para as variáveis de ambiente.
 
 ## Contribuição
--------------
 
 Se você deseja contribuir para o projeto, siga as etapas abaixo:
 
@@ -112,6 +106,5 @@ Se você deseja contribuir para o projeto, siga as etapas abaixo:
 5. Abra um Pull Request.
 
 ## Licença
----------
 
 Este projeto está licenciado sob a MIT License.
