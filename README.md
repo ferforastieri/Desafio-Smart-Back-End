@@ -1,52 +1,77 @@
-# Desafio Smart Front End
+# Desafio Smart Back End
 
-Bem-vindo ao projeto **Desafio Smart Front End**! Este é um aplicativo front-end construído com React, TypeScript, Tailwind CSS e Jest para testes. Aqui você pode ver informações detalhadas sobre a instalação, execução, testes, estrutura do projeto, contribuição e licença.
+Este é um aplicativo back-end construído com NodeJS, TypeScript, ExpressJS, TypeORM, e PostgreSQL. Aqui você pode ver informações detalhadas sobre a instalação, execução, estrutura do projeto, contribuição e licença.
 
 ## Índice
 --------
 
 * **Instalação**: Fornece os comandos para clonar o repositório e instalar as dependências.
 * **Executando o Projeto**: Explica como iniciar o projeto em modo de desenvolvimento.
-* **Testes**: Instruções para executar testes utilizando Jest.
 * **Estrutura do Projeto**: Descreve a organização das pastas e arquivos do projeto.
 * **Contribuição**: Orientações para contribuir com o projeto.
 * **Licença**: Especifica a licença do projeto.
+
 
 ## Instalação
 ------------
 
 Para começar a trabalhar com o projeto, você precisa clonar o repositório e instalar as dependências.
 
-### Requisitos
+## Requisitos
 
 * Node.js 14 ou superior
+* PostgreSQL 15.7 ou superior
 
 ### Passos
 
 1. **Clone o repositório:**
 
-`git clone git clone https://fernandoforastieri-admin@bitbucket.org/fernandoforastieri/smart-desafio-front-end.git`
+`git clone git clone https://bitbucket.org/fernandoforastieri/smart-desafio-back-end/src/main/`
 
 2. **Navegue até o diretório do projeto:**
 
-`cd SmartDesafioFrontEnd`
+`cd nome do diretorio`
 
-3. **Instale as dependências:**
+3. **Crie e configure o arquivo ENV:**
+
+Comando para criar o arquivo .ENV, onde estao as variaveis de ambiente da aplicação, a partir de um exemplo pré feito ja disponibilizado
+
+`cp env.example`
+
+Modifique a pasta de acordo com a necessidade do banco:
+
+```
+DB_USER=
+DB_HOST=localhost
+DB_NAME=shopping_cart
+DB_PASS=
+DB_PORT=5432
+PORT=3001
+```
+4. **Crie um Novo Banco de Dados**
+
+`CREATE DATABASE shopping_cart`
+
+5. **Criando as Tabelas do Banco de Dados**
+
+`npm run migrate`
+
+6. **Populando o Banco de Dados**
+
+`npm run seed`
+
+7. **Instale as dependências:**
 
 `npm install`
-ou
-`yarn install`
 
 ## Executando o Projeto
 ------------
 
-Para iniciar o projeto em modo de desenvolvimento, use o comando abaixo. Isso iniciará o servidor de desenvolvimento e abrirá o aplicativo em seu navegador padrão.
+Para iniciar o projeto, use o comando abaixo. Isso iniciará o servidor de desenvolvimento e abrirá o aplicativo em seu navegador padrão.
 
-`npm start`
-ou
-`yarn start`
+`npm run start`
 
-O aplicativo será acessível em http://localhost:3000.
+O aplicativo será acessível em http://localhost:3001.
 
 ## Executando o Projeto Back End
 ------------
@@ -59,12 +84,13 @@ O projeto possui os dados para a parte Front End do Desafio, ambos precisam esta
 
 Aqui está uma visão geral da estrutura do projeto:
 
-* **scripts/**: Contém arquivos estáticos como index.html.
+* **scripts/**: Contém arquivos importante para a configuração do Banco de Dados.
 * **src/**: Contém o código-fonte do projeto, incluindo:
-	+ Componentes: Reutilizáveis e isolados componentes React.
-	+ Páginas: Páginas do aplicativo que utilizam os componentes.
-	+ Estilos: Arquivos CSS e configurações do Tailwind CSS.
-	+ Arquivos de tipagem: Definições de tipo para o TypeScript.
+	+ Config: Arquivos de configuração que são utilizados para definir parâmetros.
+	+ Controllers: Contem todos os arquivos que controlam a aplicação.
+	+ Models: Estrutura dos dados e interagem diretamente com o banco de dados.
+	+ Routes: São responsáveis por definir os endpoints da aplicação
+	+ Services: São responsáveis por encapsular a lógica de negócios da aplicação.
 * **app.ts**: Ponto de entrada da aplicação Express. Ele configura e inicializa o servidor, define middleware, e configura as rotas da aplicação.
 * **.gitignore**: Especifica quais arquivos e pastas devem ser ignorados pelo Git.
 * **package.json**: Gerencia as dependências e scripts do projeto.
