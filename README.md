@@ -42,7 +42,7 @@ Para começar a trabalhar com o projeto, você precisa clonar o repositório e i
 
 Comando para criar o arquivo .ENV, onde estao as variaveis de ambiente da aplicação, a partir de um exemplo pré feito ja disponibilizado
 
-`cp env.example`
+`cp .env.example .env`
 
 Modifique a pasta de acordo com a necessidade do banco:
 
