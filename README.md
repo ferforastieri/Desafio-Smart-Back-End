@@ -17,7 +17,7 @@ Este é um aplicativo back-end construído com NodeJS, TypeScript, ExpressJS, Ty
 
 Para começar a trabalhar com o projeto, você precisa clonar o repositório e instalar as dependências.
 
-## Requisitos
+### Requisitos
 
 * Node.js 14 ou superior
 * PostgreSQL 15.7 ou superior
@@ -32,7 +32,9 @@ Para começar a trabalhar com o projeto, você precisa clonar o repositório e i
 
 `cd nome do diretorio`
 
-3. **Crie e configure o arquivo ENV:**
+### Criação e Configuração do Banco de Daos
+
+1. **Crie e configure o arquivo ENV:**
 
 Comando para criar o arquivo .ENV, onde estao as variaveis de ambiente da aplicação, a partir de um exemplo pré feito ja disponibilizado
 
@@ -48,19 +50,19 @@ DB_PASS=
 DB_PORT=5432
 PORT=3001
 ```
-4. **Crie um Novo Banco de Dados**
+2. **Crie um Novo Banco de Dados**
 
 `CREATE DATABASE shopping_cart`
 
-5. **Criando as Tabelas do Banco de Dados**
+3. **Criando as Tabelas do Banco de Dados**
 
 `npm run migrate`
 
-6. **Populando o Banco de Dados**
+4. **Populando o Banco de Dados**
 
 `npm run seed`
 
-7. **Instale as dependências:**
+### **Instale as dependências:**
 
 `npm install`
 
